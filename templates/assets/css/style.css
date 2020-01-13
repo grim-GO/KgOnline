@@ -24,6 +24,9 @@ input [type="text"], input [type="password"], input [type="search"] {
 input, textarea {
     outline: none;
     border: none;
+    height: 100px;
+    width: 600px;
+    border-radius: 20px;
 }
 
 h1, h2 {
@@ -38,7 +41,7 @@ a, a:hover {
 }
 
 ul {
-    margin: 2px 0 0 17px;
+    margin: 1px 0 0 17px;
 }
 
 ul li {
@@ -87,6 +90,7 @@ ul li {
 .menubar {
     width: 900px;
     height: 48px;
+    margin: 0 0 0 0;
 }
 
 ul.menu {
@@ -95,7 +99,7 @@ ul.menu {
 
 ul.menu li {
     float: left;
-    padding: 9px;
+    padding: 1px 5px;
     list-style: none;
     margin: 1px 2px 0 0;
 }
@@ -104,7 +108,7 @@ ul.menu li a {
     font: normal 130% 'trebushet ms', sans-serif;
     display: block;
     height: 20px;
-    padding: 0.1px 25px 5px 2px;
+    padding: 1px 25px 5px 2px;
     color: antiquewhite;
     text-decoration: none;
 }
@@ -114,11 +118,12 @@ ul.menu li a:hover {
 }
 
 .site_content {
-    width: 880px;
+    width: 980px;
     overflow: hidden;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
     background-color: white;
-    height: 450px;
+    height: 640px;
+    background-image: url("../img/kgimg.jpg");
 }
 
 .sitebar_container {
@@ -128,9 +133,9 @@ ul.menu li a:hover {
 
 .sitebar {
     float: right;
-    width: 222px;
+    width: 605px;
     padding: 5%;
-    margin: 0 0 16px 0;
+    margin: 380px 11px 16px 0;
     border: solid 1px #f2f2f2;
     border-radius: 20px;
     background-color: darkseagreen;
@@ -163,3 +168,4 @@ ul.menu li a:hover {
     width: 630px;
     height: 400px;
 }
+
