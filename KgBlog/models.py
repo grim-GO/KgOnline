@@ -25,7 +25,5 @@ class Comment(models.Model):
     author_name = models.CharField("имя пользователя", max_length=50)
     comment_text = models.CharField("название поста", max_length=200)
     comment_date = models.DateTimeField("дата комментирования")
-    post_comm = models.ForeignKey(Post, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.author_name
+

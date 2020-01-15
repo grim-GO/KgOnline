@@ -5,13 +5,12 @@
     <title>Kg-online</title>
     <meta name="description" content="Kg-online - это социальная сеть кыргызстана" />
     <meta name="keywords" content="Kg-online, Kg - online, Kgonline, Kg online, кыргызстан онлайн, соцсеть кыргызстана" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
 </head>
 <body>
 
 <div class="main">
-    {% block content %}
-        {% endblock %}
+
     <div class="header">
         <div class="logo">
             <div class="logo_text">
@@ -22,8 +21,8 @@
         <div class="menubar">
 
             <ul class="menu">
-                <li class="selected"><a href="#">Профиль</a></li>
-                <li><a href="#">Посты</a></li>
+                <li class="selected"><a href="/KgBlog/user/">Профиль</a></li>
+                <li><a href="/KgBlog/posts/">Посты</a></li>
                 <li><a href="#">Комментарии</a></li>
                 <li><a href="#">Рейтинг</a></li>
             </ul>
