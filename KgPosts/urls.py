@@ -6,7 +6,7 @@ from . import views
 
 urlpatterns = [
 
-    url(r'^$', ListView.as_view(queryset=Post.objects.all().order_by("pub_date")[:100],
+    url(r'^$', ListView.as_view(queryset=Post.objects.all().order_by("-pub_date")[:100],
     template_name="posts.html")),
 
 ]

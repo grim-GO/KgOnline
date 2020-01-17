@@ -26,4 +26,3 @@ class Comment(models.Model):
     comment_text = models.CharField("название поста", max_length=200)
     comment_date = models.DateTimeField("дата комментирования")
 
-
