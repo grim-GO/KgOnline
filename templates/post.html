@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <title>Kg-online</title>
-    <meta name="description" content="Kg-online - это социальная сеть кыргызстана" />
-    <meta name="keywords" content="Kg-online, Kg - online, Kgonline, Kg online, кыргызстан онлайн, соцсеть кыргызстана" />
     <link rel="stylesheet" href="../KgBlog/static/css/style.css">
 </head>
 <body style="font-size: 1em;
     background-color: antiquewhite;
     color: black;">
 <div class="main" style="margin-left: auto;
-    margin-right: auto; overflow: hidden;">
+    margin-right: auto;">
 
     <div class="header" style=" background-color: darkseagreen;
     height: 165px;
     font-size: 0.8em;
     margin-left: 0px;
     margin-right: 0px;
-    min-width: 900px; overflow: hidden;">
+    min-width: 900px;">
         <div class="logo" style="margin-left: auto;
     margin-right: auto;
     width: 900px;
@@ -105,63 +102,20 @@ font-size: 1.3em;
 </div>
 
 
-<div class="site_content" style="margin-left: auto;
-    margin-right: auto;
-width: 1582px;
-    overflow: hidden;
-    margin: 0 auto 0 auto;
-    background-color: antiquewhite;
-    height: 640px;
-    background-image: url('../KgBlog/static/img/kgimg1.jpg');" >
+<div class="site_content" style="width: 640px; height: auto; padding: 0 0 20px 0;
+    background-color: darkseagreen; border-radius: 15px;  text-decoration: none; margin: 0 0 0 68px;">
 
-    <div class="sitebar_container" style=" float: right;
-    width: 224px;">
-
-        <div class="sitebar"
-             style="float: right;
-            width: 605px;
-            padding: 5%;
-            margin: 330px 490px 16px 0;
-            border: solid 1px #f2f2f2;
-            border-radius: 20px;
-            background-color: darkseagreen;">
-                <h2
-                      style="padding: 0 0 0 0; width: 90px;
-                        margin: 0 0;
-                        color: antiquewhite;
-                        letter-spacing: 0.1em;
-                        text-decoration: none; font: normal 190% 'century gothic', Arial;">Пост</h2>
-            <form method="post" action="#" id="searchbar" >
-                <input type="email" name="search-field" placeholder="название"
-                       style="justify-content: center; margin: 5px 0 5px 220px; padding: 4px; border-radius: 10px "/>
-                <input type="email" name="search-field" placeholder="ваш пост"
-                       style="outline: none;
-                        border: none;
-                        height: 100px;
-                        width: 600px;
-                        border-radius: 20px;
-                        text-align: center;" />
-                <input type="submit" class="btn"  value="отправить"
-                       style="outline: none; margin: 5px 0 0 0; color: darkgreen;
-                        border: none;
-                        height: 30px;
-                        width: 100px;
-                        border-radius: 20px;
-                        text-align: center;
-                        background-color: antiquewhite" />
-            </form>
-
-        </div>
-
-
-    </div>
-
-
-    </div>
-
-
-
+    <h2 class="text-info" style="font: normal 180% 'trebushet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 1px 25px 5px 2px;
+    color: antiquewhite;
+    text-decoration: none;">{{ post.post_title }}</h2>
+    <h6 class="text-info" style="font: normal 80% 'trebushet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 1px 25px 5px 2px;
+    color: darkgreen;
+    text-decoration: none;">Опубликовано: {{ post.pub_date|date:"d-m-Y в H:i:s" }}</h6>
+    <p>{{ post.post_text|safe|linebreaks }}</p>
 </div>
-
-</body>
-</html>
