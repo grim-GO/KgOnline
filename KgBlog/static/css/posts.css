@@ -111,8 +111,6 @@ ul.menu li a:hover {
     background-color: white;
     height: 640px;
     background-image: url("../img/kgimg1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 
 }
 
@@ -132,38 +130,46 @@ ul.menu li a:hover {
     color: antiquewhite;
 }
 
-.lables_passreg_text {
-    font-size: 0.8em;
-    margin-top: 3%;
-    margin-right: 2%;
-}
-
-.site_text h2 {
-    font-size: 16px;
-    color: darkseagreen;
-}
-
-.site_text img {
-    width: 630px;
-    height: 400px;
-}
-
-.news_content {
-    background-color: darkseagreen;
-    width: 350px;
-    height: auto;
-    margin: 15px 0 0 6px;
-    border-radius: 15px;
-}
-
-.news_content h3 {
-   color: darkgreen;
-    font-size: 40%;
-}
-
-.news_content p {
+.site_message h2 {
+    font: normal 180% 'trebushet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 1px 25px 5px 2px;
     color: antiquewhite;
-    font: normal 120% 'century gothic', Arial;
+    text-decoration: none;
+    margin: 20px 0 0 0;
 }
 
+.site_message h6 {
+    font: normal 80% 'trebushet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 1px 25px 5px 2px;
+    color: darkgreen;
+    text-decoration: none;
+    margin: 20px 0 0 5px;
+}
 
+.site_message p {
+    font: normal 100% 'trebushet ms', sans-serif;
+    color: antiquewhite;
+    margin: -5px 0;
+}
+
+.site_message {
+    width: 640px;
+    height: auto;
+    padding: 0 0 20px 0;
+    background-color: darkseagreen;
+    border-radius: 15px;  text-decoration: none;
+    margin: 20px 0 0 68px;
+}
+
+.site_message h3 {
+    font: normal 150% 'trebushet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 1px 25px 5px 2px;
+    color: antiquewhite;
+    margin: 15px 0 0 0;
+}

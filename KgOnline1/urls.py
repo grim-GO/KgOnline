@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^KgBlog/', include('KgBlog.urls')),
     url(r'^KgBlog/posts/', include('KgPosts.urls')),
     url(r'^KgBlog/user/', include('UserProf.urls')),
-    url(r'^admin/', admin.site.urls),
+    url(r'^KgBlog/admin/', admin.site.urls),
 ]
