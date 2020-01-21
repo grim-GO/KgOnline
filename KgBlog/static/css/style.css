@@ -12,9 +12,14 @@ body {
 p {
     padding: 0 0 20px 0;
     line-height: 1.7em;
-
+    font: normal 170% 'century gothic', Arial;
+    color: antiquewhite;
 }
 
+label {
+    font: normal 170% 'century gothic', Arial;
+    color: antiquewhite;
+}
 
 h1, h2 {
     font: normal 170% 'century gothic', Arial;
@@ -110,7 +115,7 @@ ul.menu li a:hover {
     margin: 0 auto 0 auto;
     background-color: white;
     height: 640px;
-    background-image: url("../img/kgimg1.jpg");
+
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -164,6 +169,11 @@ ul.menu li a:hover {
 .news_content p {
     color: antiquewhite;
     font: normal 120% 'century gothic', Arial;
+}
+
+.sitebar p {
+  font: normal 120% 'century gothic', Arial;
+  color: antiquewhite;
 }
 
 

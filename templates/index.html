@@ -6,7 +6,7 @@
     <title>Kg-online</title>
     <meta name="description" content="Kg-online - это социальная сеть кыргызстана" />
     <meta name="keywords" content="Kg-online, Kg - online, Kgonline, Kg online, кыргызстан онлайн, соцсеть кыргызстана" />
-    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/posts.css" %}" type="text/css">
 </head>
 <body>
 <div class="main">
@@ -41,7 +41,7 @@
              style="float: right;
             width: 605px;
             padding: 5%;
-            margin: 330px 490px 16px 0;
+            margin: 270px 490px 16px 0;
             border: solid 1px #f2f2f2;
             border-radius: 20px;
             background-color: darkseagreen;">
@@ -51,25 +51,12 @@
                         color: antiquewhite;
                         letter-spacing: 0.1em;
                         text-decoration: none; font: normal 190% 'century gothic', Arial;">Пост</h2>
-            <form method="POST" action="#" >
-
-                <input type="email" name="search-field" placeholder="название"
-                       style="margin: 5px 0 5px 0; padding: 4px; border-radius: 10px; width: 200px; height: 20px "/>
-                <input type="email" name="text" placeholder="ваш пост"
-                       style="outline: none;
-                        border: none;
-                        height: 100px;
-                        width: 600px;
-                        border-radius: 20px;
-                        text-align: center;" />
-                <input type="submit" class="btn"  value="отправить"
-                       style="outline: none; margin: 5px 0 0 0; color: darkgreen;
-                        border: none;
-                        height: 30px;
-                        width: 100px;
-                        border-radius: 20px;
-                        text-align: center;
-                        background-color: antiquewhite" />
+            <form method="post" action="" >
+                    {% csrf_token %}
+                {{ form.as_p }}
+                <div>
+                    <button type="submit" class="btn">Опубликовать</button>
+                </div>
             </form>
 
         </div>

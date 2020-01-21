@@ -12,8 +12,15 @@ body {
 p {
     padding: 0 0 20px 0;
     line-height: 1.7em;
-
+    font: normal 170% 'century gothic', Arial;
+    color: antiquewhite;
 }
+
+label {
+    font: normal 170% 'century gothic', Arial;
+    color: antiquewhite;
+}
+
 
 
 h1, h2 {

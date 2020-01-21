@@ -1,18 +1,15 @@
 from django.db import models
 import datetime
-from django.utils import timezone
+from datetime import datetime
 
 
 class Post(models.Model):
     post_title = models.CharField("название поста", max_length=200)
     post_text = models.TextField("текст поста")
-    pub_date = models.DateTimeField("дата публикации")
+    pub_date = models.DateTimeField(default=datetime.now())
 
     def __str__(self):
         return self.post_title
-
-    def was_published_recently(self):
-        return self.pub_date >= (timezone.now() - datetime.timedelta(days=7))
 
 
 class User(models.Model):
